@@ -1,32 +1,75 @@
-# AudioToText
-Audio-to-Text Transcription
-This Python script provides a simple yet powerful solution for transcribing large audio files into text format. It utilizes speech recognition techniques along with audio processing to achieve accurate transcription.
+# Audio to Text Converter
 
-Features
-Speech Recognition: Utilizes the speech_recognition library to convert audio input into text.
-Audio Processing: Employs the pydub library for splitting large audio files into manageable chunks based on silence intervals.
-Output Formats: Saves the transcribed text in a .txt file and also generates a corresponding .pdf document for easy readability.
-Ease of Use: Straightforward usage with minimal dependencies, making it accessible for various transcription needs.
-Requirements
-Ensure you have Python installed along with the following libraries:
+![License](https://img.shields.io/github/license/AshrithReddy08/AudioToText)
+![Contributors](https://img.shields.io/github/contributors/AshrithReddy08/AudioToText)
 
-speech_recognition
-pyaudio
-pydub
-fpdf
-You can install these dependencies using the provided requirements.txt file.
+Convert speech to text efficiently using Python and Google Speech API.
 
-Usage
-Place your audio file (in .wav format) in the same directory as the script.
-Run the script providing the path to your audio file as an argument.
-python transcribe_audio.py path_to_audio_file.wav
-The script will transcribe the audio and save the output in both text and PDF formats.
-Example
-For demonstration purposes, a sample audio file (sample_audio.wav) has been provided. You can run the script using the following command:
+## Features
 
-python transcribe_audio.py sample_audio.wav
-The script will transcribe the audio and save the output in both text and PDF formats.
-Example
-For demonstration purposes, a sample audio file (sample_audio.wav) has been provided. You can run the script using the following command:
+- Supports multiple audio formats (MP3, WAV, FLAC).
+- Fast and accurate transcription.
+- Simple command-line interface.
+- Supports batch audio processing.
+- Error handling for missing or corrupt files.
 
-python transcribe_audio.py sample_audio.wav
+## Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/AshrithReddy08/AudioToText.git
+   cd AudioToText
+   ```
+2. **Create a Virtual Environment (Recommended)**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use 'venv\\Scripts\\activate'
+   ```
+3. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. **Run the script for a single file**:
+   ```bash
+   python src/main.py --file path/to/audio.wav
+   ```
+2. **Run for multiple files**:
+   ```bash
+   python src/main.py --folder path/to/audio_directory
+   ```
+3. **Output**:
+   - The transcribed text is saved in `output/`.
+
+## Directory Structure
+```
+AudioToText/
+├── src/                  # Source code
+│   ├── main.py           # Main script
+│   ├── transcriber.py    # Core transcription logic
+│   ├── utils.py          # Utility functions
+├── tests/                # Unit tests
+├── data/                 # Sample audio files
+├── output/               # Transcription output
+├── docs/                 # Documentation
+├── requirements.txt      # Required packages
+├── .gitignore            # Ignore unnecessary files
+├── LICENSE               # License information
+├── README.md             # Project description
+```
+
+## Technologies Used
+- Python
+- Google Speech Recognition API
+- pydub (for audio processing)
+- wave (for handling WAV files)
+
+## Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License.
+
+---
