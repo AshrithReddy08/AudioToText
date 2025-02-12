@@ -25,18 +25,18 @@ Convert speech to text efficiently using Python and Google Speech API.
    ```
 3. **Install Dependencies**:
    ```bash
-   pip install -r requirements.txt
+   check for libraries which are required and not installed in your system
    ```
 
 ## Usage
 
 1. **Run the script for a single file**:
    ```bash
-   python src/main.py --file path/to/audio.wav
+   python src/p1.py --file path/to/audio.wav
    ```
 2. **Run for multiple files**:
    ```bash
-   python src/main.py --folder path/to/audio_directory
+   python src/p1.py --folder path/to/audio_directory
    ```
 3. **Output**:
    - The transcribed text is saved in `output/`.
@@ -45,16 +45,12 @@ Convert speech to text efficiently using Python and Google Speech API.
 ```
 AudioToText/
 ├── src/                  # Source code
-│   ├── main.py           # Main script
-│   ├── transcriber.py    # Core transcription logic
-│   ├── utils.py          # Utility functions
+│   ├── p1.py           # Main script
 ├── tests/                # Unit tests
 ├── data/                 # Sample audio files
 ├── output/               # Transcription output
 ├── docs/                 # Documentation
-├── requirements.txt      # Required packages
 ├── .gitignore            # Ignore unnecessary files
-├── LICENSE               # License information
 ├── README.md             # Project description
 ```
 
