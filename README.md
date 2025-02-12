@@ -1,7 +1,5 @@
 # Audio to Text Converter
 
-![License](https://img.shields.io/github/license/AshrithReddy08/AudioToText)
-![Contributors](https://img.shields.io/github/contributors/AshrithReddy08/AudioToText)
 
 Convert speech to text efficiently using Python and Google Speech API.
 
